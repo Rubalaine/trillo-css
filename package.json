@@ -1,0 +1,29 @@
+{
+  "name": "trillo-css",
+  "version": "1.0.0",
+  "description": "website for the css course",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass scss/main.scss css/style.css -w",
+    "compile:sass": "node-sass scss/main.scss css/style.comp.css ",
+    "compress:css": "node-sass css/style.comp.css css/style.css --output-style compressed",
+    "build": "npm-run-all compile:sass compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rubalaine/natours-css.git"
+  },
+  "author": "Kelven Rubalaine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rubalaine/natours-css/issues"
+  },
+  "homepage": "https://github.com/Rubalaine/natours-css#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.0.0",
+    "concat": "^1.0.3",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.0.7"
+  }
+}
